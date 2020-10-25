@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.example.mainproject.R;
 
-public class Del extends AppCompatActivity {
+public class FarmerDocumentation extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_del);
+        setContentView(R.layout.activity_farmer_documentation);
     }
 }

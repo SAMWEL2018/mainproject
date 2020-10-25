@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="GENERAL OPTIONS">
+
+        <CheckBoxPreference
+            android:title="Enable sound in app"
+            android:summary="pop messages/notifications will have sound "
+            android:key="silent_mode"
+            android:defaultValue="true"
+            />
+        <EditTextPreference
+
+
+            />
+
+    </PreferenceCategory>
+</PreferenceScreen>

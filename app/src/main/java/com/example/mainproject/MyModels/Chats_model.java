@@ -1,27 +1,39 @@
 package com.example.mainproject.MyModels;
 
-public class chat_model {
-    private String complaint;
+public class Chats_model {
+
+    private String username;
+    private String reply;
     private String date;
     private String time;
     private String mail;
 
-    public chat_model() {
+
+    public Chats_model() {
     }
 
-    public chat_model(String complaint, String date, String time, String mail) {
-        this.complaint = complaint;
+    public Chats_model(String username, String reply, String date, String time, String mail) {
+        this.username = username;
+        this.reply = reply;
         this.date = date;
         this.time = time;
         this.mail = mail;
     }
 
-    public String getComplaint() {
-        return complaint;
+    public String getUsername() {
+        return username;
     }
 
-    public void setComplaint(String complaint) {
-        this.complaint = complaint;
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getReply() {
+        return reply;
+    }
+
+    public void setReply(String reply) {
+        this.reply = reply;
     }
 
     public String getDate() {

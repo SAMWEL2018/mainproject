@@ -4,4 +4,9 @@
     <item
         android:title="End Session"
         android:id="@+id/nav_logout"/>
+    <item
+        android:title="Account settings"
+        android:id="@+id/account"
+        />
+
 </menu>

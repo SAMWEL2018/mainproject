@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.add">
+
+    <!-- TODO: Update blank fragment layout -->
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           >
+
+           <RelativeLayout
+               android:layout_weight="1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               >
+               <TextView
+                   android:gravity="center"
+                   android:layout_centerInParent="true"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="ADD EVENT"
+                   android:textColor="#000"
+                   android:textStyle="bold"
+                   />
+           </RelativeLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_weight="1"
+               >
+               <com.google.android.material.textfield.TextInputLayout
+                   android:layout_width="match_parent"
+                   android:textColorHint="@color/colorPrimaryDark"
+                   android:layout_height="wrap_content">
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:hint="Event name"
+                       android:id="@+id/event_name"
+                       />
+               </com.google.android.material.textfield.TextInputLayout>
+               <com.google.android.material.textfield.TextInputLayout
+                   android:textColorHint="@color/colorPrimaryDark"
+                   android:layout_marginTop="10dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:hint="Event description"
+                       android:id="@+id/event_desc"
+                       />
+               </com.google.android.material.textfield.TextInputLayout>
+               <com.google.android.material.textfield.TextInputLayout
+                   android:textColorHint="@color/colorPrimaryDark"
+                   android:layout_marginTop="10dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:hint="Event location"
+                       android:id="@+id/event_location"
+                       />
+               </com.google.android.material.textfield.TextInputLayout>
+               <com.google.android.material.textfield.TextInputLayout
+                   android:textColorHint="@color/colorPrimaryDark"
+                   android:layout_marginTop="10dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:hint="Event venue"
+                       android:id="@+id/event_venue"
+                       />
+               </com.google.android.material.textfield.TextInputLayout>
+               <com.google.android.material.textfield.TextInputLayout
+                   android:textColorHint="@color/colorPrimaryDark"
+                   android:layout_marginTop="10dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:hint="Event Contact Info"
+                       android:id="@+id/event_contact"
+                       />
+               </com.google.android.material.textfield.TextInputLayout>
+               
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:padding="5dp"
+                   >
+                   <Button
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Get Date"
+                       android:textColor="#fff"
+                       android:id="@+id/get_date"
+                       android:background="@color/colorPrimaryDark"
+                       />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/disp_date"
+                       android:textSize="17sp"
+                       android:textColor="#000"
+                       android:layout_marginLeft="20dp"
+                       />
+                   <Button
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Get Time"
+                       android:id="@+id/get_time"
+                       android:textColor="#fff"
+                       android:background="@color/colorPrimaryDark"
+                       android:layout_marginLeft="25dp"
+                       />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/disp_time"
+                       android:textColor="#000"
+                       android:textSize="17sp"
+                       android:layout_marginLeft="10dp"
+                       />
+               </LinearLayout>
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginRight="20dp"
+                   android:layout_marginTop="10dp"
+                   android:textColor="#fff"
+                   android:background="@color/colorPrimaryDark"
+                   android:text="ADD EVENT"
+                   android:id="@+id/event_set"
+                   />
+           </LinearLayout>
+
+       </LinearLayout>
+
+   </ScrollView>
+
+</FrameLayout>

@@ -7,6 +7,7 @@
     android:orientation="vertical"
     tools:context=".Activities.Login">
 
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,6 +21,7 @@
             android:text="Login"
             android:textColor="#000"
             android:textSize="30sp" />
+
     </RelativeLayout>
 
     <LinearLayout
@@ -30,12 +32,16 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorPrimaryDark"
+            >
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/farmer_login_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="19sp"
                 android:hint="Email"
                 android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -43,12 +49,16 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:passwordToggleEnabled="true">
+            app:passwordToggleEnabled="true"
+            android:textColorHint="@color/colorPrimaryDark"
+            >
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/farmer_login_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="19sp"
                 android:hint="password"
                 android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -57,37 +67,57 @@
             android:id="@+id/btn_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/btn_design"
             android:layout_gravity="center"
-            android:background="@color/colorPrimaryDark"
+            android:backgroundTint="@color/colorPrimaryDark"
             android:text="Login"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginTop="20sp"
             android:textColor="#fff"
             android:textSize="20sp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <RelativeLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:orientation="horizontal"
             android:weightSum="2">
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_weight="1"
+                android:layout_marginLeft="22sp"
                 android:text="Don't have an account?"
-                android:textColor="@color/colorAccent" />
+                android:textSize="18sp"
+                android:id="@+id/first"
+                android:textColor="#000" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="18dp"
-                android:layout_weight="1"
+                android:layout_toRightOf="@+id/first"
+                android:layout_marginLeft="20dp"
                 android:onClick="rdregister"
                 android:text="Register"
+                android:soundEffectsEnabled="false"
+                android:textStyle="bold"
                 android:textColor="#000"
-                android:textSize="15sp" />
-        </LinearLayout>
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:id="@+id/reset_password"
+            android:textColor="@color/colorPrimaryDark"
+            android:soundEffectsEnabled="false"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:gravity="center"
+            />
 
     </LinearLayout>
 

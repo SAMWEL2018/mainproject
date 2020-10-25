@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="App Resources">
+        <menu>
     <group android:checkableBehavior="single">
 
         <item
@@ -14,11 +16,29 @@
             android:id="@+id/lg"
             />
         <item
-            android:id="@+id/exit"
-            android:icon="@drawable/ic_exit"
-            android:title="Exit"
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_settings"
+            android:title="App Settings"
             />
 
     </group>
+        </menu>
+    </item>
+    <item android:title="Others">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:title="Share App"
+                    android:icon="@drawable/ic_share"
+                    android:id="@+id/share"
+                    />
+                <item
+                    android:title="Email Developers"
+                    android:icon="@drawable/ic_email"
+                    android:id="@+id/dev_email"
+                    />
+            </group>
+        </menu>
+    </item>
 
 </menu>

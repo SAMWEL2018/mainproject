@@ -8,15 +8,18 @@
     tools:context=".Activities.MainActivity">
 
 
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/fragment_container"
             />
+
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:id="@+id/nav_view"
+        app:headerLayout="@layout/header"
         app:menu="@menu/drawer"
         android:layout_gravity="start"
         />

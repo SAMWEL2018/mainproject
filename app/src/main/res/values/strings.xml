@@ -3,4 +3,32 @@
     <string name="comment">comment</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="document"><![CDATA[
+
+                    The app has been developed to ease ways on how farmers will
+                    interact globally in the country and also they will be able
+                    to get notified with Agricultural events all over the country.
+                    Farmers will also have conversations with agricultural officers
+                    in control.
+                    For Suppliers, they will have to purchase an account for kes 900
+                    which will be renewd after every 3 months.
+                     Suppliers will have privileges of posting there items where buyers
+                     can purchase their items at their own cost.
+    ]]></string>
+    <string name="note"><![CDATA[
+                    The app NOTE: RECOMMENDS  FOR VALID USER DETAILS TO BE USED.
+
+    ]]></string>
+    <string name="farm_docs"><![CDATA[
+                       This account will give you an upper priority where you can be
+                        able to post your issues or complaints you are facing. The issue
+                         can be addressed through replies from your fellow farmers and
+                         can be later be justified by the responsible Agricultural Officer.
+                        There will be also a chatpage for groupchats where issues  discussed
+                        randomly.
+
+    ]]></string>
 </resources>

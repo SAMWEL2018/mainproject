@@ -7,17 +7,28 @@
     android:layout_margin="10dp"
     tools:context=".Activities.Chats">
 
-    <TextView
-        android:layout_marginTop="10dp"
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:textColor="@android:color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:padding="3dp"
+        app:cardUseCompatPadding="true"
+        android:elevation="10dp"
+        app:cardCornerRadius="5dp"
         android:id="@+id/received"
-        />
+        >
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="3dp"
+            android:id="@+id/received_text"
+            android:transitionName="foward"
+            />
+    </androidx.cardview.widget.CardView>
+
 
     <RelativeLayout
         android:layout_marginTop="10dp"
@@ -28,10 +39,42 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <androidx.recyclerview.widget.RecyclerView
+            android:visibility="gone"
             android:id="@+id/chat_recycler"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
     </RelativeLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/linear_conversations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        >
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_page"
+            />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Conversations!"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Be The first to Respond to the complaint.."
+            />
+    </LinearLayout>
     <RelativeLayout
         android:layout_alignParentBottom="true"
         android:id="@+id/comment_section"
@@ -41,11 +84,13 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_toStartOf="@+id/btn_send"
             android:layout_toLeftOf="@+id/btn_send"
+            android:textColorHint="@color/colorPrimaryDark"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <com.google.android.material.textfield.TextInputEditText
                 android:hint="Comment......"
                 android:id="@+id/user_text"
+                android:inputType="text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
         </com.google.android.material.textfield.TextInputLayout>

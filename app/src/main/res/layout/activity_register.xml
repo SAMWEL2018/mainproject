@@ -10,7 +10,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="2"
+        android:layout_weight="1"
         >
         <TextView
             android:layout_width="match_parent"
@@ -30,6 +30,7 @@
         >
         <com.google.android.material.textfield.TextInputLayout
             android:textColorHint="@color/colorPrimaryDark"
+            android:padding="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <com.google.android.material.textfield.TextInputEditText
@@ -43,6 +44,7 @@
                 />
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
+            android:padding="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColorHint="@color/colorPrimaryDark"
@@ -56,6 +58,7 @@
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
             android:textColorHint="@color/colorPrimaryDark"
+            android:padding="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:passwordToggleEnabled="true"
@@ -70,6 +73,7 @@
         </com.google.android.material.textfield.TextInputLayout>
             <com.google.android.material.textfield.TextInputLayout
                 android:textColorHint="@color/colorPrimaryDark"
+                android:padding="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:passwordToggleEnabled="true">
@@ -88,35 +92,41 @@
             android:id="@+id/btn_register"
             android:layout_gravity="center"
             android:text="Register"
+            android:background="@drawable/btn_design"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:textSize="20sp"
-            android:background="@color/colorPrimaryDark"
+            android:backgroundTint="@color/colorPrimaryDark"
             android:textColor="#fff"
             />
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:weightSum="2"
                 android:layout_marginTop="15dp"
                 >
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Already have an account?"
                     android:layout_marginLeft="16dp"
-                    android:textColor="@color/colorAccent"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:id="@+id/view"
                     />
                 <TextView
-                    android:layout_width="match_parent"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/view"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
                     android:text="Login"
                     android:textColor="#000"
                     android:onClick="rdlogin"
-                    android:layout_weight="1"
                     />
-            </LinearLayout>
+            </RelativeLayout>
 
     </LinearLayout>
 

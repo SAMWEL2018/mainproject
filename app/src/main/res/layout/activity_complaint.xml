@@ -35,18 +35,19 @@
             android:id="@+id/spinner"
             android:layout_gravity="center"
             />
+
         <EditText
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:id="@+id/complaint_text_area"
             android:layout_width="match_parent"
-            android:padding="10dp"
             android:layout_height="150dp"
-            android:background="@drawable/area_design"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="100dp"
-            android:inputType="text|textMultiLine"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/area_design"
             android:hint="Type your complaint here"
-            />
+            android:inputType="text|textMultiLine"
+            android:padding="10dp" />
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">

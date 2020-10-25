@@ -32,6 +32,8 @@
                     android:orientation="horizontal"
                     >
                     <LinearLayout
+                        android:id="@+id/farm_docs"
+                        android:onClick="rd_documentation"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="5dp"
                         android:orientation="vertical"
@@ -40,9 +42,11 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content">
                         <ImageView
+                            android:id="@+id/docy"
+                            android:transitionName="docs"
                             android:layout_width="60dp"
                             android:layout_height="60dp"
-                            android:src="@drawable/ic_documentation"
+                            android:src="@drawable/ic_docu"
                             />
                         <TextView
                             android:layout_width="wrap_content"
@@ -53,7 +57,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:onClick="rdcomplaint"
+                        android:onClick="rd_complaint"
                         android:orientation="vertical"
                         android:layout_marginRight="10dp"
                         android:layout_marginLeft="5dp"
@@ -65,7 +69,7 @@
                         <ImageView
                             android:layout_width="60dp"
                             android:layout_height="60dp"
-                            android:src="@drawable/ic_complaint_status"
+                            android:src="@drawable/ic_chat_bubble_outline_black_24dp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
@@ -95,14 +99,26 @@
                         android:onClick="rd_complaint_status"
                         android:layout_height="wrap_content">
                         <ImageView
-                            android:src="@drawable/ic_complaints"
+                            android:src="@drawable/ic_complains"
                             android:layout_width="60dp"
                             android:layout_height="60dp"/>
-                        <TextView
+                        <RelativeLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:id="@+id/count"
-                            />
+                            android:background="@drawable/count"
+                            android:padding="5dp"
+                            android:gravity="center"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/count"
+                                android:textStyle="bold"
+                                android:textSize="13sp"
+                                android:textColor="#fff"
+
+                                />
+                        </RelativeLayout>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -116,11 +132,17 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:orientation="vertical"
+                        android:onClick="shop"
                         >
                         <ImageView
                             android:layout_width="60dp"
                             android:layout_height="60dp"
-                            android:src="@drawable/ic_shop"
+                            android:src="@drawable/ic_shopping_cart_black_24dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
@@ -140,6 +162,8 @@
                     android:orientation="horizontal"
                     >
                     <LinearLayout
+                        android:id="@+id/event_layout"
+                        android:onClick="rd_events"
                         android:orientation="vertical"
                         android:gravity="center"
                         android:layout_weight="1"
@@ -149,7 +173,7 @@
                         <ImageView
                             android:layout_width="60dp"
                             android:layout_height="60dp"
-                            android:src="@drawable/ic_events"
+                            android:src="@drawable/ic_event_black_24dp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
@@ -159,6 +183,7 @@
                             />
                     </LinearLayout>
                     <LinearLayout
+                        android:onClick="rd_groupchat"
                         android:gravity="center"
                         android:orientation="vertical"
                         android:layout_weight="1"
@@ -168,12 +193,12 @@
                         <ImageView
                             android:layout_width="60dp"
                             android:layout_height="60dp"
-                            android:src="@drawable/ic_account"
+                            android:src="@drawable/ic_chat_bubble_black_24dp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="My Account"
+                            android:text="Group Chat"
                             android:textColor="@android:color/black"
                             />
 
